@@ -1,0 +1,472 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Csv2WPeC 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-28 17:28+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Davide Mencarini <davidemencarini@alice.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-KeywordsList: __;_e;_c;esc_html__;esc_html_e;esc_attr__;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: csv2wpecCoupon.php:43
+msgid "Error: plugin \"Csv2WPeC Coupon\" requires a newer version of PHP to be running."
+msgstr "Errore: il plugin \"Csv2WPeC\" richiede una versione di PHP più recente per essere eseguito."
+
+#: csv2wpecCoupon.php:44
+msgid "Minimal version of PHP required: "
+msgstr "Versione minima di PHP richiesta: "
+
+#: csv2wpecCoupon.php:45
+msgid "Your server's PHP version: "
+msgstr "Versione PHP del server: "
+
+#: csv2wpecCoupon_CheckVersion.php:30
+msgid "Looks like you're running an older version of WordPress."
+msgstr "Stai utilizzando una vecchia versione di WordPress."
+
+#: csv2wpecCoupon_CheckVersion.php:31
+msgid "You need to be running at least WordPress "
+msgstr "Devi utilizzare almeno Wordpress "
+
+#: csv2wpecCoupon_CheckVersion.php:32
+#: csv2wpecCoupon_CheckVersion.php:47
+#: csv2wpecCoupon_CheckVersion.php:55
+msgid "to use"
+msgstr "per poter usare"
+
+#: csv2wpecCoupon_CheckVersion.php:45
+msgid "Looks like the WP-Ecommerce plugin is not installed."
+msgstr "Il plugin WP e-Commerce risulta non installato.<br />"
+
+#: csv2wpecCoupon_CheckVersion.php:46
+msgid "You need to install the WP e-commerce plugin (minimal required version: "
+msgstr "Devi installare il plugin WP e-Commerce (versione minima richiesta: "
+
+#: csv2wpecCoupon_CheckVersion.php:53
+msgid "Looks like the WP-Ecommerce plugin is inactive."
+msgstr "Il plugin WP-commerce risulta inattivo.<br />"
+
+#: csv2wpecCoupon_CheckVersion.php:54
+msgid "You need to activate the WP e-commerce plugin (minimal required version: "
+msgstr "Devi attivre il plugin WP e-Commerce (versione minima richiesta: "
+
+#: csv2wpecCoupon_CheckVersion.php:63
+msgid "Looks like you're running an older version of WP e-commerce plugin."
+msgstr "Stai utilizzando una vecchia versione del plugin WP e-Commerce."
+
+#: csv2wpecCoupon_CheckVersion.php:64
+msgid "Minimum WPeC version required to use "
+msgstr "La versione minima del plugin WPeC richiesta per poter usare "
+
+#: csv2wpecCoupon_CheckVersion.php:65
+msgid "is"
+msgstr "è "
+
+#: csv2wpecCoupon_CouponError.php:44
+msgid "Undefined file name"
+msgstr "Nome di file non definito"
+
+#: csv2wpecCoupon_CouponError.php:45
+msgid "File not found. Please make sure the file exists and is a regular file"
+msgstr "File non trovato. Assicurati che il file esista e che sia un file regolare"
+
+#: csv2wpecCoupon_CouponError.php:46
+msgid "Invalid file type"
+msgstr "Tipo di file non valido"
+
+#: csv2wpecCoupon_CouponError.php:47
+msgid "Errors occurred while reading the file"
+msgstr "Si sono verificati errori nella lettura del file CSV"
+
+#: csv2wpecCoupon_CouponError.php:48
+msgid "No CSV file has been selected. Please select a file to import"
+msgstr "Nessun file CSV è stato selezionato. Selezionare un file da importare"
+
+#: csv2wpecCoupon_CouponError.php:49
+msgid "Can not open CSV file. Please check if the file exists and if you have permission to open it"
+msgstr "Il file CSV non può essere aperto. Verifica che il file esiste e che hai i permessi richiesti per aprirlo."
+
+#: csv2wpecCoupon_CouponError.php:50
+#, php-format
+msgid "[line %d] Wrong field name [%s]"
+msgstr "[linea %d] Nome di campo errato [%s]"
+
+#: csv2wpecCoupon_CouponError.php:51
+#, php-format
+msgid "[line %d] Key field \"%s\" not found"
+msgstr "[linea %d] Campo chiave \"%s\" non trovato"
+
+#: csv2wpecCoupon_CouponError.php:52
+#, php-format
+msgid "[lines %d-%d] Lines skipped"
+msgstr "[linee %d-%d] Linee non lette"
+
+#: csv2wpecCoupon_CouponError.php:53
+#, php-format
+msgid "[line %d] Line skipped"
+msgstr "[line %d] Linea non letta"
+
+#: csv2wpecCoupon_CouponError.php:54
+msgid "Please see the documentation for details"
+msgstr "Consulta la documentazione per maggiori informazioni"
+
+#: csv2wpecCoupon_CouponError.php:58
+#, php-format
+msgid "Key field not defined in the header line %s of CSV file"
+msgstr "Campo Chiave non definito sulla linea di intestazione %s del file CSV"
+
+#: csv2wpecCoupon_CouponError.php:59
+#, php-format
+msgid "Code \"%s\" at line number %s cannot identify a unique coupon. Please see the documentation for details"
+msgstr "Il codice \"%s\" alla linea %s non consente di identificare univocamente un coupon. Consulta la documentazione del plugin per maggiori informazioni."
+
+#: csv2wpecCoupon_CouponError.php:60
+msgid "Invalid value. Floating number expected."
+msgstr "Valore non valido. Inserire un numero reale."
+
+#: csv2wpecCoupon_CouponError.php:61
+#: csv2wpecCoupon_CouponError.php:62
+#: csv2wpecCoupon_CouponError.php:63
+msgid "Invalid value. Boolean number expected: { 0, 1 }"
+msgstr "Valore non valido. Inserire un valore booleano { 0, 1 }"
+
+#: csv2wpecCoupon_CouponError.php:64
+msgid "Invalid value. Integer number expected: { 0, 1, 2}"
+msgstr "Valore non valido. Inserire un numero intero: { 0, 1, 2}"
+
+#: csv2wpecCoupon_CouponError.php:65
+msgid "Start Date is required"
+msgstr "La data di inizio è obbligatoria"
+
+#: csv2wpecCoupon_CouponError.php:66
+msgid "Expiration Date is required"
+msgstr "La data di scadenza è obbligatoria"
+
+#: csv2wpecCoupon_CouponError.php:67
+msgid "Invalid Start Date. Please use DATE format \"YYYY-MM-DD\" (ex: 2013-05-20) or DATETIME format: \"YYYY-MM-DD HH:MM:SS\" (ex: 2013-05-20 00:00:00)"
+msgstr "Data di inizio non valida. Puoi usare il formato DATE  \"YYYY-MM-DD\" (es: 2013-05-20) o il formato DATETIME: \"YYYY-MM-DD HH:MM:SS\" (es: 2013-05-20 00:00:00)"
+
+#: csv2wpecCoupon_CouponError.php:68
+msgid "Invalid Expiration Date. Please use DATE format \"YYYY-MM-DD\" (ex: 2013-05-20) or DATETIME format: \"YYYY-MM-DD HH:MM:SS\" (ex: 2013-05-20 00:00:00)"
+msgstr "Data di scadenza non valida. Puoi usare il formato DATE  \"YYYY-MM-DD\" (es: 2013-05-20) o il formato DATETIME: \"YYYY-MM-DD HH:MM:SS\" (es: 2013-05-20 00:00:00)"
+
+#: csv2wpecCoupon_CouponError.php:69
+msgid "Expiration Date cannot be less than Start date"
+msgstr "La data di scadenza non può precedere quella di inizio"
+
+#: csv2wpecCoupon_CouponError.php:70
+msgid "Expiration Date cannot be less than the Current date"
+msgstr "La data di scadenza non può precedere quella corrente"
+
+#: csv2wpecCoupon_CouponError.php:71
+#, php-format
+msgid "Missing item in Condition: \"%s\". Valid condition format is \"property:logic:value\""
+msgstr "Termine mancante nella condizione: \"%s\". Il formato valido di una condizione è: \"Proprietà:Logica:Valore\""
+
+#: csv2wpecCoupon_CouponError.php:72
+#, php-format
+msgid "Too many items in Condition: \"%s\". Valid condition format is \"operator:property:logic:value\""
+msgstr "Troppi termini nella condizione: \"%s\". Il formato valido di una condizione è: \"Operatore:Proprietà:Logica:Valore\""
+
+#: csv2wpecCoupon_CouponError.php:73
+#, php-format
+msgid "Too many items in Condition: \"%s\". Valid condition format is \"property:logic:value\""
+msgstr "Troppi termini nella condizione: \"%s\". Il formato valido di una condizione è: \"Proprietà:Logica:Valore\""
+
+#: csv2wpecCoupon_CouponError.php:74
+#, php-format
+msgid "Invalid operator in Condition: \"%s\". Valid operators are: \"AND\", \"OR\""
+msgstr "Operatore non valido nella condizione: \"%s\". Operatori validi sono: \"AND\", \"OR\""
+
+#: csv2wpecCoupon_CouponError.php:75
+#, php-format
+msgid "Invalid property term in Condition: \"%s\". Valid property terms are: \"item_name\", \"item_quantity\", \"total_quantity\", \"subtotal_amount\""
+msgstr "Termine Proprietà non valido nella condizione: \"%s\". Termini validi sono: \"item_name\", \"item_quantity\", \"total_quantity\", \"subtotal_amount\""
+
+#: csv2wpecCoupon_CouponError.php:76
+#, php-format
+msgid "Invalid logic term in Condition: \"%s\". Valid logic terms are: \"equal\", \"greater\", \"less\", \"contains\", \"not_contain\", \"begins\", \"ends\", \"category\""
+msgstr "Termine 'Logica' non valido nella condizione: \"%s\". Termini validi sono: \"equal\", \"greater\", \"less\", \"contains\", \"not_contain\", \"begins\", \"ends\", \"category\""
+
+#: csv2wpecCoupon_CouponError.php:77
+#, php-format
+msgid "Value term not defined in Condition: \"%s\""
+msgstr "Il termine 'Valore' non è stato definito nella condizione: \"%s\""
+
+#: csv2wpecCoupon_CouponError.php:80
+#, php-format
+msgid "A numeric value is required in condition: \"%s\""
+msgstr "Un valore numerico è richiesto nella condzione: \"%s\""
+
+#: csv2wpecCoupon_CouponError.php:81
+#, php-format
+msgid "Undefined or invalid property in condition: \"%s\". Valid properties are: \"quantity\", \"total\", \"subtotal\""
+msgstr "Proprietà non definita o non valida nella condizione: \"%s\". Proprietà valide sono: \"quantity\", \"total\", \"subtotal\""
+
+#: csv2wpecCoupon_CouponError.php:82
+#, php-format
+msgid "Undefined value in condition: \"%s\". Please see the documentation for details"
+msgstr "Valore non definito nella condizione: \"%s\". Consultare la documentazione per maggiori dettagli"
+
+#: csv2wpecCoupon_CouponError.php:83
+#, php-format
+msgid "Undefined or invalid logic in condition: \"%s\". Please see the documentation for details"
+msgstr "Logica non definita o non valida nella condizione: \"%s\". Consultare la documentazione per maggiori dettagli"
+
+#: csv2wpecCoupon_CouponError.php:87
+msgid "Error deleting coupon"
+msgstr "Errore nella cancellazione del coupon"
+
+#: csv2wpecCoupon_CouponError.php:88
+msgid "Error updating coupon"
+msgstr "Errore nell'aggiornamento del coupon"
+
+#: csv2wpecCoupon_CouponError.php:89
+msgid "Error adding new coupon"
+msgstr "Errore nellla creazione del nuovo coupon"
+
+#: csv2wpecCoupon_CouponExport.php:23
+msgid "Click 'Export Coupons' to export all Coupons to a CSV file"
+msgstr "Clicca su 'Esporta i Coupon' per esportare tutti i Coupon in un file CSV"
+
+#: csv2wpecCoupon_CouponExport.php:24
+#: csv2wpecCoupon_CouponSettings.php:23
+msgid "Export Coupons"
+msgstr "Exporta i Coupon"
+
+#: csv2wpecCoupon_CouponImport.php:32
+msgid "Data Validation Errors"
+msgstr "Errori di validazione dei dati"
+
+#: csv2wpecCoupon_CouponImport.php:34
+msgid "Data cannot be processed because of errors in the Import File."
+msgstr "I dati non possono essere elaborati per la presenza di errori nel file CSV di importazione."
+
+#: csv2wpecCoupon_CouponImport.php:35
+msgid "You should fix the errors and read the file again for validation."
+msgstr "Dovresti correggere gli errori e leggere nuovamente il file per validarlo."
+
+#: csv2wpecCoupon_CouponImport.php:37
+#: csv2wpecCoupon_CouponProcessingLog.php:13
+msgid "Errors have been logged to: "
+msgstr "Gli errori sono stati registrati in:"
+
+#: csv2wpecCoupon_CouponImport.php:44
+msgid "Click 'Import Coupons' to import Coupons from the CSV Import File"
+msgstr "Clicca su 'Importa i Coupon' per iniziare l'elaborazione dei dati"
+
+#: csv2wpecCoupon_CouponImport.php:45
+#: csv2wpecCoupon_CouponSettings.php:47
+msgid "Import Coupons"
+msgstr "Importa i Coupon"
+
+#: csv2wpecCoupon_CouponImport.php:54
+msgid "Statistics"
+msgstr "Statistica"
+
+#: csv2wpecCoupon_CouponImport.php:57
+msgid "Coupons"
+msgstr "Coupons"
+
+#: csv2wpecCoupon_CouponImport.php:58
+msgid "Processed"
+msgstr "Elaborati"
+
+#: csv2wpecCoupon_CouponImport.php:59
+msgid "Created"
+msgstr "Aggiunti nuovi"
+
+#: csv2wpecCoupon_CouponImport.php:60
+msgid "Updated"
+msgstr "Aggiornato"
+
+#: csv2wpecCoupon_CouponImport.php:61
+msgid "Deleted"
+msgstr "Eliminato"
+
+#: csv2wpecCoupon_CouponImport.php:62
+msgid "Errors"
+msgstr "Errori"
+
+#: csv2wpecCoupon_CouponImport.php:63
+msgid "Processing time"
+msgstr "Tempo di elaborazione"
+
+#: csv2wpecCoupon_CouponListTable.php:86
+msgid "Coupon code"
+msgstr "Codice Coupon"
+
+#: csv2wpecCoupon_CouponListTable.php:87
+msgid "Discount"
+msgstr "Sconto"
+
+#: csv2wpecCoupon_CouponListTable.php:88
+msgid "Start Date"
+msgstr "Data di inizio"
+
+#: csv2wpecCoupon_CouponListTable.php:89
+msgid "Expiration"
+msgstr "Scadenza"
+
+#: csv2wpecCoupon_CouponListTable.php:90
+msgid "Status"
+msgstr "Stato"
+
+#: csv2wpecCoupon_CouponListTable.php:196
+msgid "skip processing"
+msgstr "non elaborato"
+
+#: csv2wpecCoupon_CouponListTable.php:198
+msgid "to delete"
+msgstr "da eliminare"
+
+#: csv2wpecCoupon_CouponListTable.php:200
+msgid "deleted"
+msgstr "eliminato"
+
+#: csv2wpecCoupon_CouponListTable.php:202
+msgid "inserted"
+msgstr "aggiunto"
+
+#: csv2wpecCoupon_CouponListTable.php:204
+msgid "updated"
+msgstr "aggiornato"
+
+#: csv2wpecCoupon_CouponListTable.php:243
+msgid "Free shipping"
+msgstr "Spedizione gratuita"
+
+#: csv2wpecCoupon_CouponListTable.php:608
+msgid "Expand Table"
+msgstr "Espandi la tabella"
+
+#: csv2wpecCoupon_CouponListTable.php:614
+msgid "Collapse table"
+msgstr "Collassa la tabella"
+
+#: csv2wpecCoupon_CouponListTable.php:661
+msgid "No Coupons found"
+msgstr "Nessun coupon trovato"
+
+#: csv2wpecCoupon_CouponProcessingLog.php:12
+msgid "Data Processing Errors"
+msgstr "Errori nell'elaborazione dei dati"
+
+#: csv2wpecCoupon_CouponSettings.php:26
+msgid "Lists all Coupons in the database"
+msgstr "Elenca tutti i coupon"
+
+#: csv2wpecCoupon_CouponSettings.php:27
+msgid "Display Coupons"
+msgstr "Visualizza i Coupon"
+
+#: csv2wpecCoupon_CouponSettings.php:28
+msgid "Hide List"
+msgstr "Nascondi l'elenco"
+
+#: csv2wpecCoupon_CouponSettings.php:29
+msgid "Show List"
+msgstr "Mostra l'elenco"
+
+#: csv2wpecCoupon_CouponSettings.php:50
+msgid "Click \"Browse\" to select a Coupon CSV Import File"
+msgstr "Clicca su \"Scegli\" per selezionare un file .CSV con i dati da importare"
+
+#: csv2wpecCoupon_CouponSettings.php:51
+msgid "Click \"Read File\" to read and validate the Import File"
+msgstr "Clicca su \"Leggi File\" per leggere e validare il file di importazione dati"
+
+#: csv2wpecCoupon_CouponSettings.php:60
+msgid "Read file"
+msgstr "Leggi il file"
+
+#: csv2wpecCoupon_ErrorHandler.php:130
+msgid "Unknown error"
+msgstr "Errore sconosciuto"
+
+#: csv2wpecCoupon_OptionsManager.php:265
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Non disponi dei permessi sufficienti per accedere a questa pagina."
+
+#: csv2wpecCoupon_OptionsManager.php:283
+msgid "System Settings"
+msgstr "Impostazioni di sistema"
+
+#: csv2wpecCoupon_OptionsManager.php:285
+msgid "System"
+msgstr "Sistema"
+
+#: csv2wpecCoupon_OptionsManager.php:286
+msgid "PHP Version"
+msgstr "Versione PHP"
+
+#: csv2wpecCoupon_OptionsManager.php:291
+msgid "(WARNING: This plugin may not work properly with versions earlier than PHP 5.2)"
+msgstr "(ATTENZIONE: Questo plugin potrebbe non funzionare correttamente con le versioni di PHP precedenti alla 5.2)"
+
+#: csv2wpecCoupon_OptionsManager.php:297
+msgid "MySQL Version"
+msgstr "Versione MySQL"
+
+#: csv2wpecCoupon_OptionsManager.php:302
+msgid "(WARNING: This plugin may not work properly with versions earlier than MySQL 5.0)"
+msgstr "(ATTENZIONE: Questo plugin potrebbe non funzionare correttamente con le versioni di MySQL precedenti alla 5.0)"
+
+#: csv2wpecCoupon_OptionsManager.php:310
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: csv2wpecCoupon_OptionsManager.php:333
+msgid "Save Changes"
+msgstr "Salva le modifiche"
+
+#: csv2wpecCoupon_OptionsManager.php:391
+msgid "true"
+msgstr "vero"
+
+#: csv2wpecCoupon_OptionsManager.php:393
+msgid "false"
+msgstr "falso"
+
+#: csv2wpecCoupon_OptionsManager.php:396
+msgid "Administrator"
+msgstr "Amministratore"
+
+#: csv2wpecCoupon_OptionsManager.php:398
+msgid "Editor"
+msgstr "Editore"
+
+#: csv2wpecCoupon_OptionsManager.php:400
+msgid "Author"
+msgstr "Autore"
+
+#: csv2wpecCoupon_OptionsManager.php:402
+msgid "Contributor"
+msgstr "Collaboratore"
+
+#: csv2wpecCoupon_OptionsManager.php:404
+msgid "Subscriber"
+msgstr "Sottoscrittore"
+
+#: csv2wpecCoupon_OptionsManager.php:406
+msgid "Anyone"
+msgstr "Chiunque"
+
+#: csv2wpecCoupon_Plugin.php:131
+msgid "Error dumping coupon data"
+msgstr "Errore nella visualizzazione dei dati di coupon"
+
+#: csv2wpecCoupon_Plugin.php:132
+msgid "Error reading coupon data"
+msgstr "Errore nalla lettura dei dati di coupon"
+
+#: csv2wpecCoupon_Plugin.php:133
+msgid "Error importing coupon data"
+msgstr "Errore nella scrittura dei dati di coupon nel database"
+

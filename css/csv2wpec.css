@@ -1,0 +1,248 @@
+
+@charset "utf-8";
+
+/* Wrap ----------------------------------------
+*/
+
+.wrap { }
+
+.wrap p.title {
+	font-weight:bold;
+	margin-bottom: .6em;
+}
+
+.wrap p.updated {
+	background-color: #FFFFE0;
+	border-color: #E6DB55;
+	border-radius: 3px 3px 3px 3px;
+	border-style: solid;
+	border-width: 1px;
+	margin: 1.5em 0;
+	padding: 0.5em;
+}
+
+/* File Error ----------------------------------
+*/
+
+.error_title {
+	margin-top: 2em;
+	font-weight:bold;
+	color: #e00;
+}
+
+.error_item {
+	margin-left: 1em;
+}
+
+/* Coupon --------------------------------------
+*/
+
+#import_coupon_iframe {
+	display: none;
+}
+
+#export_coupon_hide_readout,
+#export_coupon_show_readout,
+#import_coupon_start_reading {
+ 	display: none;
+}
+
+#export_coupon_reading,
+#export_coupon_writing,
+#import_coupon_reading,
+#import_coupon_writing {
+	width:16px;
+	height:16px;
+	display:none;
+	vertical-align: middle;
+}
+
+#import_coupon_processing {
+ 	display: none;
+}
+
+#import_coupon_statistics {
+ 	display: none;
+}
+
+/* Product -------------------------------------
+*/
+
+#import_product_iframe {
+	display: none;
+}
+
+#export_product_hide_readout,
+#export_product_show_readout,
+#import_product_start_reading,
+#import_product_info {
+ 	display: none;
+}
+
+#export_product_reading,
+#export_product_writing,
+#import_product_reading,
+#import_product_writing {
+	width:16px;
+	height:16px;
+	display:none;
+	vertical-align: middle;
+}
+
+#export_product_processing {
+	padding: .4em 0;
+}
+
+#import_product_processing {
+ 	display: none;
+}
+
+#import_product_progressbar {
+	position:relative;
+	height:20px;
+}
+#import_product_progressbar_percent {
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:28em;
+	margin-left:-14em;
+	height:20px;
+	margin-top:-9px;
+	text-align:center;
+	font-size: 12px;
+}
+
+#import_product_statistics {
+ 	display: none;
+}
+
+/* Statistics --------------------------
+*/
+
+p.statistics-title {
+	font-weight:bold;
+}
+
+.statistics-table
+{
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+  border: 1px solid #999;
+  color: #000;
+  line-height:1.5em;
+  background-color: #fff;
+}
+
+.statistics-table th
+{
+  border: 1px dotted #666;
+  padding: 0.5em 1em;
+  text-align: left;
+  background: linear-gradient(to top, #ECECEC, #F9F9F9) repeat scroll 0 0 #F1F1F1;
+  color: #000;
+  font-weight:normal;
+}
+
+.statistics-table td
+{
+  border: 1px dotted #666;
+  padding: 0.5em 1em;
+  text-align: center;
+  color: #000;
+  font-weight:bold;
+}
+
+/* List table ----------------------------------
+*/
+
+#import_product_form table,
+#import_coupon_form table {
+	table-layout: auto;
+}
+#import_product_form table.wp-list-table tr th,
+#import_product_form table.wp-list-table tr td,
+#import_coupon_form table.wp-list-table tr th,
+#import_coupon_form table.wp-list-table tr td {
+	padding-left: 14px;
+	white-space: nowrap;
+}
+
+.status_to_delete {
+	color: #c00;
+}
+.status_skip {
+	color: #0c0;
+}
+.status_error {
+	color: #c00;
+}
+.status_deleted,
+.status_inserted,
+.status_updated {
+	color: #008800;
+	font-weight:bold;
+}
+
+.item_code {
+	font-weight:bold;
+}
+.item_id {
+	color:silver
+}
+
+.active_key a,
+.active_key a:hover,
+.active_key a:active,
+.active_key a:visited,
+.active_key a:focus
+{
+	font-weight:bold;
+	color: #c00;
+}
+
+tr.data_errors  {
+	display: none;
+	background-color: #333333;
+	border:none;
+	border-width: 0;
+}
+
+tr.data_errors td {
+	color:#CCCCCC;
+    padding-bottom: .8em;
+    padding-top: .8em;
+}
+
+/* UI Widgets ----------------------------------
+*/
+
+.ui-widget-content {
+	border: none;
+}
+
+#import_product_processing .ui-widget-content,
+#import_coupon_processing .ui-widget-content {
+	border: 1px solid #aaaaaa;
+}
+#import_product_processing .ui-widget-header,
+#import_coupon_processing .ui-widget-header {
+	background: #cccccc url(../images/ui-bg_progress_bar.png) 50% 50% repeat-x;
+}
+
+/* Utility -------------------------------------
+*/
+
+.bold {
+	font-weight:bold;
+}
+
+.option {
+	font-style: italic;
+	margin-left: 2em;
+}
+
+a.openuploadtab  {
+	text-decoration:underline;
+}

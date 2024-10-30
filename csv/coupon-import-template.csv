@@ -1,0 +1,164 @@
+Coupon Code,Discount,Discount Type,Use Once,Active,Every Product,Start,Expiry,Rules
+MC034556,10.0,1,0,0,0,2012-12-20,2013-01-07,item_name:contains:tie|total_quantity:greater:5
+MC034557,10.0,1,0,0,0,2012-12-20,2013-01-07,tie|total>5
+
+
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------
+#                           |                                               |
+#                           |                                               |
+#                           |                                               |
+#  FIELD NAMES              |  DESCRIPTION                                  | VALUES
+#                           |                                               |
+#                           |                                               |
+#                           |                                               |
+# --------------------------|-----------------------------------------------|----------------------------------------------------------------------------------
+#                           |                                               |
+#  Coupon Code       [O]    |  Code entered to receive the discount         |  Alphanumeric string
+#                           |                                               |
+# --------------------------|-----------------------------------------------|----------------------------------------------------------------------------------
+#                           |                                               |
+#  Discount                 |  Discount Amount                              |  Positive floating number (default: 0)
+#                           |                                               |
+# --------------------------|-----------------------------------------------|----------------------------------------------------------------------------------
+#                           |                                               |
+#  Discount Type            |  Discount Type                                |  Integer number { 0, 1, 2 } (default: 0)
+#                           |                                               |
+#                           |                                               |     0 = Fixed Amount
+#                           |                                               |     1 = Percentage
+#                           |                                               |     2 = Free Shipping
+#                           |                                               |
+# --------------------------|-----------------------------------------------|----------------------------------------------------------------------------------
+#                           |                                               |
+#  Use Once                 |  Deactivate coupon after it has been used     |  Boolean number { 0, 1 } (default: 0)
+#                           |                                               |
+# --------------------------|-----------------------------------------------|----------------------------------------------------------------------------------
+#                           |                                               |
+#  Active                   |  Is this Coupon Active?                       |  Boolean number { 0, 1 } (default: 1)
+#                           |                                               |
+# --------------------------|-----------------------------------------------|----------------------------------------------------------------------------------
+#                           |                                               |
+#  Every Product            |  This coupon affects each product at checkout |  Boolean number { 0, 1 } (default: 0)
+#                           |                                               |
+# --------------------------|-----------------------------------------------|----------------------------------------------------------------------------------
+#                           |                                               |
+#  Start             [O]    |  Start Date                                   |  DATE format: YYYY-MM-DD (ex: 2013-05-20)
+#                           |                                               |     or
+#                           |                                               |  DATETIME format: YYYY-MM-DD HH:MM:SS (ex: 2013-05-20 00:00:00)
+#                           |                                               |
+# --------------------------|-----------------------------------------------|----------------------------------------------------------------------------------
+#                           |                                               |
+#  Expiry            [O]    |  End Date                                     |  DATE format: YYYY-MM-DD (ex: 2013-05-20)
+#                           |                                               |    or
+#                           |                                               |  DATETIME format: YYYY-MM-DD HH:MM:SS (ex: 2013-05-20 00:00:00)
+#                           |                                               |
+# --------------------------|-----------------------------------------------|----------------------------------------------------------------------------------
+#                           |                                               |
+#  Rules                [M] |  Conditions                                   |  STANDARD SYNTAX ( Csv2WPeC Coupon >= 1.0 )
+#                           |                                               |
+#                           |                                               |   property:logic:value|...|property:logic:value ( WPeC < 3.8.11 )
+#                           |                                               |   [operator:]property:logic:value|...|operator:property:logic:value ( WPeC >= 3.8.11 ) (*)
+#                           |                                               |
+#                           |                                               |     operators = { and, or } (default: and)
+#                           |                                               |     properties = { item_name, item_quantity, total_quantity, subtotal_amount } (required)
+#                           |                                               |     logics = { equal, greater, less, contains, not_contain, begins, ends, category } (required)
+#                           |                                               |     value is a number or a string (required)
+#                           |                                               |
+#                           |                                               |
+#                           |                                               |  SIMPLIFIED SYNTAX ( Csv2WPeC Coupon > 1.0 )
+#                           |                                               |
+#                           |                                               |   rule|rule|...|rule ( WPeC < 3.8.11 )
+#                           |                                               |   [operator:]rule|operator:rule|...|operator:rule ( WPeC < 3.8.11 ) (*)
+#                           |                                               |
+#                           |                                               |     operators = { and, or } (default: and)
+#                           |                                               |     rule = expression (see the table and the examples below)
+#                           |                                               |
+#                           |                                               |
+#                           |                                               |
+#                           |                                               |                      [item_name]   [item_]quantity   total[_quantity]    subtotal[_amount]
+#                           |                                               |    .......................................................................................
+#                           |                                               |
+#                           |                                               |    [equal]            red wine           =5               =5                  =5
+#                           |                                               |
+#                           |                                               |    [greater]             -               >5               >5                  >5
+#                           |                                               |
+#                           |                                               |    [less]                -               <5               <5                  <5
+#                           |                                               |
+#                           |                                               |    [contains]          *wine*            -                -                   -
+#                           |                                               |
+#                           |                                               |    [not_contain]      !*wine*            -                -                   -
+#                           |                                               |
+#                           |                                               |    [begins]             red*             -                -                   -
+#                           |                                               |
+#                           |                                               |    [ends]              *wine             -                -                   -
+#                           |                                               |
+#                           |                                               |    [category]        #red wines          -                -                   -
+#                           |                                               |
+#                           |                                               |    .......................................................................................
+#                           |                                               |
+#                           |                                               |
+#                           |                                               |
+#                           |                                               |    EXAMPLE (equivalent conditions):
+#                           |                                               |
+#                           |                                               |               STANDARD                              SIMPLIFIED
+#                           |                                               |
+#                           |                                               |               item_name:equal:red wine              red wine
+#                           |                                               |               item_name:contains:wine               *wine*
+#                           |                                               |               item_name:not_contain:wine            !*wine*
+#                           |                                               |               item_name:begins:red                  red*
+#                           |                                               |               item_name:ends:wine                   *wine
+#                           |                                               |               item_name:category:red wines          #red wines
+#                           |                                               |               item_quantity:equal:5                 quantity=5
+#                           |                                               |               item_quantity:less:5                  quantity<5
+#                           |                                               |               total_quantity:greater:5              total>5
+#                           |                                               |               subtotal_amount:equal:5               subtotal=5
+#                           |                                               |
+#                           |                                               |
+#                           |                                               |    EXAMPLE (syntaxes can be mixed):
+#                           |                                               |
+#                           |                                               |      red wine|quantity>1|quantity<6  (SIMPLIFIED)
+#                           |                                               |      item_name:equal:red wine|item_quantity:greater:1|item_quantity:less:6  (STANDARD)
+#                           |                                               |      item_name:equal:red wine|quantity>1|item_quantity:less:6  (STANDARD + SIMPLIFIED)
+#                           |                                               |
+#                           |                                               |
+#                           |                                               |    EXAMPLE (csv import file):
+#                           |                                               |
+#                           |                                               |      Coupon Code,Rules
+#                           |                                               |      AA001,red wine|quantity>1|quantity<6
+#                           |                                               |      AA002,*wine*|quantity=5
+#                           |                                               |      AA003,item_quantity:greater:5|*wine
+#                           |                                               |
+# --------------------------|-----------------------------------------------|----------------------------------------------------------------------------------
+#
+#
+#
+#  Lines beginning with '#' (number sign) are comment lines
+#
+#
+#
+#  Coupon Code is always an [O]bligatory field.
+#  Start and Expiry fields are [O]bligatory when adding a new coupon.
+#  All other fields are optional. If a field is not specified it will get the default value.
+#
+#  A [M]ultivalued field can accepts multiple values separated by a pipe (|) sign.
+#
+#  The order of the fields in the header row is not important, only that it matches the order of the data rows.
+#  The case of the field names in the header row is not important.
+#
+#
+#
+#  There are two strict requirements for number format:
+#   - The decimal mark (decimal separator) must be a dot (.)
+#   - A number must not contain thousand separators
+#
+#
+#
+#  (*) New: Starting from WPeC version 3.8.11 you can choose either AND or OR operators for coupon conditions.
+#           Previous versions assumed the AND operator.
+#
+#
+#
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
